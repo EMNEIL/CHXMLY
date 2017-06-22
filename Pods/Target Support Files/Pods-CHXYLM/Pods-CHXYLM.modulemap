@@ -1,0 +1,6 @@
+framework module Pods_CHXYLM {
+  umbrella header "Pods-CHXYLM-umbrella.h"
+
+  export *
+  module * { export * }
+}

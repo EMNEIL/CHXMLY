@@ -1,0 +1,25 @@
+[
+  {
+    "clsName" : "CHFindViewController",
+    "title" : "发现",
+    "imageName" : "tabbar_find"
+  },
+  {
+    "clsName" : "CHSubscriberViewController",
+    "title" : "订阅听",
+    "imageName" : "tabbar_sound"
+  },
+  {
+    "clsName" : "UIViewController"
+  },
+  {
+    "clsName" : "CHPlayViewController",
+    "title" : "下载听",
+    "imageName" : "tabbar_download"
+  },
+  {
+    "clsName" : "CHProfileViewController",
+    "title" : "我的",
+    "imageName" : "tabbar_me"
+  }
+]
