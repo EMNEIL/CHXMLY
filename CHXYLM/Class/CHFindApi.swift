@@ -18,6 +18,10 @@ fileprivate let kFindCate = "http://mobile.ximalaya.com/mobile/discovery/v2/cate
 //榜单
 
 fileprivate let kFindRank = "http://mobile.ximalaya.com/mobile/discovery/v2/rankingList/group?channel=ios-b1&device=iPhone&includeActivity=true&includeSpecial=true&scale=2&version=5.4.27"
+
+// 主播
+
+fileprivate let kFindAnchor = "http://mobile.ximalaya.com/mobile/discovery/v1/anchor/recommend?device=iPhone&version=5.4.27"
 class CHFindApi: NSObject {
 
     class func requestBanner(_ completed:@escaping (_ result:[String:AnyObject]?,_ error:NSError?) -> ()) {
@@ -59,5 +63,13 @@ class CHFindApi: NSObject {
             completed(resultDict,error)
         }
     }
+    
+    class func requestAnchor(_ completed : @escaping (_ result : [String:AnyObject]?,_ error : NSError?) -> ()){
+        
+        CHNetWorkTools.sharedInstance.requestData(urlString: kFindAnchor, methodType: .GET, parameters: nil) { (result, error) in
+            let resultDict = result as? [String:AnyObject]
+            completed(resultDict,error)
+    }
+  }
 }
-   
+

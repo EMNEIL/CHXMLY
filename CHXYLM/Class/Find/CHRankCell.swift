@@ -20,8 +20,13 @@ class CHRankCell: UITableViewCell {
            
            logoImage.sd_setImage(with: URL.init(string: newModel.coverPath!))
            title.text = newModel.title!
-           subTitle.text = "1" + (newModel.firstKResults?[0].title)! +  "\n" + "2" + (newModel.firstKResults?[1].title)!
-
+            
+            if (newModel.firstKResults?.count)! < 2 {
+                subTitle.text = "1 " + (newModel.firstKResults?[0].title)!
+            }
+            else{
+           subTitle.text = "1 " + (newModel.firstKResults?[0].title)! + "\n" + "2 " + (newModel.firstKResults?[1].title)!
+            }
         }
     }
     lazy var logoImage: UIImageView = {
@@ -80,11 +85,14 @@ class CHRankCell: UITableViewCell {
             
             make.top.equalTo(self.logoImage)
             make.left.equalTo(logoImage.snp.right).offset(10)
+            make.height.equalTo(17)
         }
         
         subTitle.snp.makeConstraints { (make) in
             
             make.left.equalTo(title)
+            make.top.equalTo(title.snp.bottom).offset(3)
+            make.right.equalTo(playButton.snp.left).offset(-10)
             make.bottom.equalTo(logoImage)
         }
         

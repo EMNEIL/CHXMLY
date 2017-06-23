@@ -28,7 +28,7 @@ class LXFSubFindFactory: NSObject {
         case .LXFSubFindTypeCategory:
             controller = CHCategoryViewController()
         case .LXFSubFindTypeRadio:
-            controller = CHRandViewController()
+            controller = CHRadioViewController()
         case .LXFSubFindTypeRand:
             controller = CHRandViewController()
         case .LXFSubFindTypeAnchor:

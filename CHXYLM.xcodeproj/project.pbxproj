@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		06A6F6EF1EFBA10F00305BD0 /* CHAnchorCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06A6F6EE1EFBA10F00305BD0 /* CHAnchorCell.swift */; };
+		06A6F6F11EFCC5A100305BD0 /* CHAnchorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06A6F6F01EFCC5A100305BD0 /* CHAnchorModel.swift */; };
 		06AC909E1EFA662000695040 /* CHRankCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06AC909D1EFA662000695040 /* CHRankCell.swift */; };
 		06AC90A01EFA6D8400695040 /* CHRankModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06AC909F1EFA6D8400695040 /* CHRankModel.swift */; };
 		06DAD5C91EFA15E400616D3D /* CHCategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06DAD5C81EFA15E400616D3D /* CHCategoryCell.swift */; };
@@ -66,6 +68,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		06A6F6EE1EFBA10F00305BD0 /* CHAnchorCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CHAnchorCell.swift; sourceTree = "<group>"; };
+		06A6F6F01EFCC5A100305BD0 /* CHAnchorModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CHAnchorModel.swift; sourceTree = "<group>"; };
 		06AC909D1EFA662000695040 /* CHRankCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CHRankCell.swift; sourceTree = "<group>"; };
 		06AC909F1EFA6D8400695040 /* CHRankModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CHRankModel.swift; sourceTree = "<group>"; };
 		06DAD5C81EFA15E400616D3D /* CHCategoryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CHCategoryCell.swift; sourceTree = "<group>"; };
@@ -198,6 +202,8 @@
 			isa = PBXGroup;
 			children = (
 				2E341CF71E27756700E11E9A /* CHAnchorViewController.swift */,
+				06A6F6EE1EFBA10F00305BD0 /* CHAnchorCell.swift */,
+				06A6F6F01EFCC5A100305BD0 /* CHAnchorModel.swift */,
 			);
 			name = anchor;
 			sourceTree = "<group>";
@@ -632,9 +638,11 @@
 				2E341D001E27775000E11E9A /* CHRecommandViewController.swift in Sources */,
 				2E341CE31E271DD000E11E9A /* CHSubscriberViewController.swift in Sources */,
 				2E9064701E28ACEC00F115DD /* CHRecommandCategoryCell.swift in Sources */,
+				06A6F6EF1EFBA10F00305BD0 /* CHAnchorCell.swift in Sources */,
 				2EF913881E264E7A0087F33E /* AppDelegate.swift in Sources */,
 				06DAD5C91EFA15E400616D3D /* CHCategoryCell.swift in Sources */,
 				06FF01E91EF27FA500811A57 /* CHFindCell.swift in Sources */,
+				06A6F6F11EFCC5A100305BD0 /* CHAnchorModel.swift in Sources */,
 				2EC515EA1E2E0648004C2DB1 /* CHRecommandHeaderModel.swift in Sources */,
 				2E341D0A1E277B2E00E11E9A /* LXFPageViewController.swift in Sources */,
 				2E341CFE1E27773400E11E9A /* CHCategoryViewController.swift in Sources */,
